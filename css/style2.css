@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: Incosolata 'Space Mono';
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    max-width: 600;
+    margin: 0;
+}
+
+.judul{
+    display: flex;
+    
+}
+
+.container{
+    max-width: 1200px;
+    padding: 24px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* style header */
+
+header .judul{
+    font-family: Incosolata;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#333333;
+    flex-grow: 1;
+}
+
+/* style content */
+main{
+    display: flex;
+    align-items: center;
+    /* margin-top: 5px; */
+    margin-bottom: 20px;
+}
+
+
+img{
+    max-width: 400px;
+    
+}
+
+
+.main--img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main--content{
+    flex: 1;
+    font-family: 'Space Mono';
+}
+
+.headline{
+   
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.deskripsi{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.button--content{
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+
+    .deskripsi{
+        margin-top: 30px;
+    }
+
+    .judul{
+        justify-content: center;
+    }
+  
+}
